@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RogerQuiz</string>
+    <string name="user_name"> Enter your name </string>
+    <string name="quest_1"> 1 - Which big slam was won 5 following times by Roger Federer ? </string>
+    <string name="answer_1_q_1"> Wimbledon </string>
+    <string name="answer_2_q_1"> Roland-Garros </string>
+    <string name="answer_3_q_1"> US Open </string>
+    <string name="answer_4_q_1"> Australian Open </string>
+    <string name="quest_2"> 2 - How old was Roger Federer when he won a grand slam for the first time ? </string>
+    <string name="answer_1_q_2"> 19 years old </string>
+    <string name="answer_2_q_2"> 21 years old </string>
+    <string name="quest_3"> 3 - How many grand slams did Federer win ?" </string>
+    <string name="nb_slam"> Enter number of slams </string>
+    <string name="quest_4"> 4 - During how many weeks has Federer been world N°1 in his career ? </string>
+    <string name="answer_1_q_4"> 302 </string>
+    <string name="answer_2_q_4"> 286 </string>
+    <string name="quest_5"> 5 - On which surface has Federer been the best tennis player ever ? </string>
+    <string name="answer_1_q_5"> Hard </string>
+    <string name="answer_2_q_5"> Grass </string>
+    <string name="answer_3_q_5"> Clay </string>
+    <string name="end_test"> Result </string>
+</resources>
