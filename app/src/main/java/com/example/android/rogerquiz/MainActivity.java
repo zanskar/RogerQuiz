@@ -1,8 +1,11 @@
 package com.example.android.rogerquiz;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -15,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Hide the keyboard
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         setContentView(R.layout.activity_main);
     }
 
@@ -22,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
      * Initializing the number of correct answers
      */
     int score = 0;
+
     /**
      * This method is called when the result button is clicked.
      */
@@ -35,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         question_3();
         question_4();
         question_5();
-
 
         // Displays the test result on the screen
         String quiz_result = createQuizResult(name, score);
@@ -53,8 +58,7 @@ public class MainActivity extends AppCompatActivity {
      * @return text of the test result
      */
     private String createQuizResult(String name, int score) {
-        String quiz_result = "Quiz result :  ";
-        quiz_result += "\n" + "Hello " + name + "! Thanks for participating " + name;
+        String quiz_result = "Hello " + name + "! Thanks for participating ";
         quiz_result += "\n" + "Your score is " + score + " on 5.";
         return quiz_result;
     }
@@ -111,6 +115,9 @@ public class MainActivity extends AppCompatActivity {
         // Figure out if the user chose "19" as answer
     EditText slamField = (EditText) findViewById(R.id.slam_field);
       String slam = slamField.getText().toString();
+        // Hide the keyboard
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+        setContentView(R.layout.activity_main);
        // Score is incremented of 1 point if user answered both Winbledon and Us Open
      if (slam.equals("19")) {
          incrementScore();   }
@@ -149,14 +156,6 @@ public class MainActivity extends AppCompatActivity {
                 answerRadio = (RadioButton) findViewById(R.id.answer_q_5_rb_1);
                 answerRadio = (RadioButton) findViewById(R.id.answer_q_5_rb_3);
         }
-    }
-
-    /**
-     * This method displays the given text on the screen.
-     */
-    private void displayResult(String result) {
-        TextView testResultTextView = (TextView) findViewById(R.id.test_result_text_view);
-        testResultTextView.setText(result);
     }
 
 
