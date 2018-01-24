@@ -1,27 +1,30 @@
 package com.example.android.rogerquiz;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
 
     /**
      * Initializing the number of correct answers
      */
     int score = 0;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // Hide the keyboard
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+        setContentView(R.layout.activity_main);
+    }
+
     /**
      * This method is called when the result button is clicked.
      */
@@ -36,10 +39,9 @@ public class MainActivity extends AppCompatActivity {
         question_4();
         question_5();
 
-
         // Displays the test result on the screen
         String quiz_result = createQuizResult(name, score);
-        Toast.makeText(getApplicationContext(), quiz_result,Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), quiz_result, Toast.LENGTH_LONG).show();
 
         //Resets the score
         score = 0;
@@ -53,9 +55,8 @@ public class MainActivity extends AppCompatActivity {
      * @return text of the test result
      */
     private String createQuizResult(String name, int score) {
-        String quiz_result = "Quiz result :  ";
-        quiz_result += "\n" + "Hello " + name + "! Thanks for participating " + name;
-        quiz_result += "\n" + "Your score is " + score + " on 5.";
+        String quiz_result = getString(R.string.hello) + " " + name + " " + getString(R.string.thanks);
+        quiz_result += "\n" + getString(R.string.score) + " " + score + " " + getString(R.string.five);
         return quiz_result;
     }
 
@@ -109,12 +110,13 @@ public class MainActivity extends AppCompatActivity {
      */
     public void question_3() {
         // Figure out if the user chose "19" as answer
-    EditText slamField = (EditText) findViewById(R.id.slam_field);
-      String slam = slamField.getText().toString();
-       // Score is incremented of 1 point if user answered both Winbledon and Us Open
-     if (slam.equals("19")) {
-         incrementScore();   }
-     }
+        EditText slamField = (EditText) findViewById(R.id.slam_field);
+        String slam = slamField.getText().toString();
+        // Score is incremented of 1 point if us answered 19
+        if (slam.equals("19")) {
+            incrementScore();
+        }
+    }
 
 
     /**
@@ -133,6 +135,7 @@ public class MainActivity extends AppCompatActivity {
                 answerRadio = (RadioButton) findViewById(R.id.answer_q_4_rb_2);
         }
     }
+
     /**
      * This method counts the correct answer in question 5
      * "On which surface has Federer been the best tennis player ever ?"  (Answer is Grass)
@@ -152,15 +155,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * This method displays the given text on the screen.
-     */
-    private void displayResult(String result) {
-        TextView testResultTextView = (TextView) findViewById(R.id.test_result_text_view);
-        testResultTextView.setText(result);
-    }
-
-
-    /**
      * This method is called when user selected a correct answer.
      * Adds +1 to score for each correct answer
      */
@@ -168,5 +162,4 @@ public class MainActivity extends AppCompatActivity {
         score = score + 1;
         return score;
     }
-
-    }
+}
