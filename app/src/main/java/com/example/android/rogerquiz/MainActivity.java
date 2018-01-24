@@ -167,6 +167,6 @@ public class MainActivity extends AppCompatActivity {
     private int incrementScore() {
         score = score + 1;
         return score;
-    }
+    }git
 
     }
