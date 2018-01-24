@@ -38,7 +38,9 @@ public class MainActivity extends AppCompatActivity {
         question_3();
         question_4();
         question_5();
-
+        // Hide the keyboard
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+        setContentView(R.layout.activity_main);
         // Displays the test result on the screen
         String quiz_result = createQuizResult(name, score);
         Toast.makeText(getApplicationContext(), quiz_result, Toast.LENGTH_LONG).show();
