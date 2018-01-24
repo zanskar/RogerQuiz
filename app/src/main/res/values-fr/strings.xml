@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RogerQuiz</string>
+    <string name="user_name">Entrer votre nom</string>
+    <string name="answer_1_q_2">19 ans</string>
+    <string name="answer_2_q_2">21 ans</string>
+    <string name="answer_4_q_1">Open d\'Australie</string>
+    <string name="answer_3_q_1">US Open</string>
+    <string name="answer_2_q_1">" Roland-Garros "</string>
+    <string name="answer_1_q_1">" Wimbledon "</string>
+    <string name="quest_1">"1 - Quel(s) grand(s) chelem(s) ont été gagnés 5 fois de suite par Roger Federer ? "</string>
+    <string name="quest_2">2 - Quel âge avait Roger Federer lorsqu\'il a gagné son premier grand chelem ?</string>
+    <string name="quest_3">3 - Combien de grans chelems Roger Federer a-t-il gagnés ?</string>
+    <string name="nb_slam">Entrer le nb de gds chelems</string>
+    <string name="quest_4">"4 - Pendant combien de semaines Riger Federer a-t-il été n°1 mondial pendant sa carrière ? "</string>
+    <string name="answer_1_q_4">" 302 "</string>
+    <string name="answer_2_q_4">" 286 "</string>
+    <string name="answer_1_q_5">Dur</string>
+    <string name="answer_2_q_5">Gazon</string>
+    <string name="answer_3_q_5">Terre battue</string>
+    <string name="end_test">Résultat</string>
+    <string name="hello">Bonjour</string>
+    <string name="thanks">" ! Merci de votre participation."</string>
+    <string name="score">"Vous avez un score de "</string>
+    <string name="five">" sur 5."</string>
+    <string name="quest_5">" 5 - Sur quelle surface Federer est-il le meilleur joueur de tous les temps ?"</string>
+</resources>

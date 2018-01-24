@@ -8,115 +8,115 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/pad_20"
+        android:layout_marginBottom="@dimen/top_text"
         android:orientation="vertical"
         tools:context="com.example.android.rogerquiz.MainActivity">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/roger"
-            />
+            android:src="@drawable/roger" />
+
         <EditText
             android:id="@+id/name_field"
-            style="@style/Questions"
+            style="@style/Field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/pad_30"
-            android:layout_marginBottom="@dimen/pad_16"
-            android:layout_marginLeft="@dimen/pad_35"
-            android:layout_marginRight="@dimen/pad_35"
-            android:padding="@dimen/pad_16"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/space_bottom"
+            android:layout_marginLeft="@dimen/space_lr_field"
+            android:layout_marginRight="@dimen/space_lr_field"
+            android:layout_marginTop="@dimen/top_text"
             android:background="@drawable/rounded_corner_y"
             android:hint="@string/user_name"
-            android:textColor="@color/colorGreen"
-            android:layout_gravity="center"
-            android:inputType="textCapWords" />
+            android:inputType="textCapWords"
+            android:padding="@dimen/space_bottom"
+            android:textColor="@color/colorGreen" />
 
         <TextView
             android:id="@+id/question_1"
             style="@style/Questions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/pad_16"
-            android:layout_marginTop="@dimen/pad_16"
-            android:padding="@dimen/pad_24"
+            android:layout_marginBottom="@dimen/space_bottom"
+            android:layout_marginTop="@dimen/top_text"
+            android:padding="@dimen/pad_text"
             android:text="@string/quest_1"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <CheckBox
             android:id="@+id/answer_q_1_cb_1"
             style="@style/Answers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/pad_16"
-            android:layout_marginBottom="@dimen/pad_16"
-            android:layout_marginTop="@dimen/pad_16"
-            android:layout_marginLeft="@dimen/pad_35"
-            android:layout_marginRight="@dimen/pad_35"
-            android:buttonTint="@color/colorOrange"
-            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/space_bottom"
+            android:layout_marginLeft="@dimen/space_lr"
+            android:layout_marginRight="@dimen/space_lr"
+            android:layout_marginTop="@dimen/space_bottom"
             android:background="@drawable/rounded_corner_y"
-            android:text="@string/answer_1_q_1" />
+            android:buttonTint="@color/colorOrange"
+            android:padding="@dimen/padding"
+            android:text="@string/answer_1_q_1"
+            android:textStyle="bold" />
 
         <CheckBox
             android:id="@+id/answer_q_1_cb_2"
             style="@style/Answers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/pad_16"
-            android:layout_marginBottom="@dimen/pad_16"
-            android:layout_marginTop="@dimen/pad_16"
-            android:layout_marginLeft="@dimen/pad_35"
-            android:layout_marginRight="@dimen/pad_35"
             android:layout_gravity="center"
-            android:buttonTint="@color/colorOrange"
-            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/space_bottom"
+            android:layout_marginLeft="@dimen/space_lr"
+            android:layout_marginRight="@dimen/space_lr"
+            android:layout_marginTop="@dimen/space_bottom"
             android:background="@drawable/rounded_corner_y"
-            android:text="@string/answer_2_q_1" />
+            android:buttonTint="@color/colorOrange"
+            android:padding="@dimen/padding"
+            android:text="@string/answer_2_q_1"
+            android:textStyle="bold" />
 
         <CheckBox
             android:id="@+id/answer_q_1_cb_3"
             style="@style/Answers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/pad_16"
-            android:layout_marginBottom="@dimen/pad_16"
-            android:layout_marginTop="@dimen/pad_16"
-            android:layout_marginLeft="@dimen/pad_35"
-            android:layout_marginRight="@dimen/pad_35"
             android:layout_gravity="center"
-            android:buttonTint="@color/colorOrange"
-            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/space_bottom"
+            android:layout_marginLeft="@dimen/space_lr"
+            android:layout_marginRight="@dimen/space_lr"
+            android:layout_marginTop="@dimen/space_top"
             android:background="@drawable/rounded_corner_y"
-            android:text="@string/answer_3_q_1" />
+            android:buttonTint="@color/colorOrange"
+            android:padding="@dimen/padding"
+            android:text="@string/answer_3_q_1"
+            android:textStyle="bold" />
 
         <CheckBox
             android:id="@+id/answer_q_1_cb_4"
             style="@style/Answers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/pad_16"
-            android:layout_marginBottom="@dimen/pad_16"
-            android:layout_marginTop="@dimen/pad_16"
-            android:layout_marginLeft="@dimen/pad_35"
-            android:layout_marginRight="@dimen/pad_35"
             android:layout_gravity="center"
-            android:buttonTint="@color/colorOrange"
-            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/space_bottom"
+            android:layout_marginLeft="@dimen/space_lr"
+            android:layout_marginRight="@dimen/space_lr"
+            android:layout_marginTop="@dimen/space_top"
             android:background="@drawable/rounded_corner_y"
-            android:text="@string/answer_4_q_1" />
+            android:buttonTint="@color/colorOrange"
+            android:padding="@dimen/padding"
+            android:text="@string/answer_4_q_1"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/question_2"
             style="@style/Questions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="@dimen/pad_24"
-            android:layout_marginBottom="@dimen/pad_16"
-            android:layout_marginTop="@dimen/pad_16"
-            android:textStyle="bold"
-            android:text="@string/quest_2" />
+            android:layout_marginBottom="@dimen/space_bottom"
+            android:layout_marginTop="@dimen/top_text"
+            android:padding="@dimen/pad_text"
+            android:text="@string/quest_2"
+            android:textStyle="bold" />
 
         <RadioGroup
             android:id="@+id/answer_2"
@@ -129,30 +129,30 @@
                 style="@style/Answers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/pad_16"
-                android:layout_marginBottom="@dimen/pad_16"
-                android:layout_marginTop="@dimen/pad_30"
-                android:layout_marginLeft="@dimen/pad_35"
-                android:layout_marginRight="@dimen/pad_35"
-                android:textStyle="bold"
-                android:buttonTint="@color/colorOrange"
+                android:layout_marginBottom="@dimen/space_bottom"
+                android:layout_marginLeft="@dimen/space_lr"
+                android:layout_marginRight="@dimen/space_lr"
+                android:layout_marginTop="@dimen/space_top"
                 android:background="@drawable/rounded_corner_y"
-                android:text="@string/answer_1_q_2" />
+                android:buttonTint="@color/colorOrange"
+                android:padding="@dimen/padding"
+                android:text="@string/answer_1_q_2"
+                android:textStyle="bold" />
 
             <RadioButton
                 android:id="@+id/answer_q_2_rb_2"
                 style="@style/Answers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/pad_16"
-                android:layout_marginBottom="@dimen/pad_16"
-                android:layout_marginTop="@dimen/pad_16"
-                android:layout_marginLeft="@dimen/pad_35"
-                android:layout_marginRight="@dimen/pad_35"
-                android:textStyle="bold"
-                android:buttonTint="@color/colorOrange"
+                android:layout_marginBottom="@dimen/space_bottom"
+                android:layout_marginLeft="@dimen/space_lr"
+                android:layout_marginRight="@dimen/space_lr"
+                android:layout_marginTop="@dimen/space_top"
                 android:background="@drawable/rounded_corner_y"
-                android:text="@string/answer_2_q_2" />
+                android:buttonTint="@color/colorOrange"
+                android:padding="@dimen/padding"
+                android:text="@string/answer_2_q_2"
+                android:textStyle="bold" />
 
         </RadioGroup>
 
@@ -161,73 +161,73 @@
             style="@style/Questions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/pad_16"
-            android:padding="@dimen/pad_24"
-            android:textStyle="bold"
-            android:text="@string/quest_3" />
+            android:layout_marginTop="@dimen/top_text"
+            android:padding="@dimen/pad_text"
+            android:text="@string/quest_3"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/slam_field"
-            style="@style/Questions"
+            style="@style/Field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/pad_16"
-            android:layout_marginTop="@dimen/pad_30"
-            android:layout_marginLeft="@dimen/pad_35"
-            android:layout_marginRight="@dimen/pad_35"
-            android:padding="@dimen/pad_16"
-            android:hint="@string/nb_slam"
             android:layout_gravity="center"
-            android:textColor="@color/colorGreen"
-            android:background="@drawable/rounded_corner_y" />
+            android:layout_marginBottom="@dimen/space_bottom"
+            android:layout_marginLeft="@dimen/space_lr_field"
+            android:layout_marginRight="@dimen/space_lr_field"
+            android:layout_marginTop="@dimen/top_text"
+            android:background="@drawable/rounded_corner_y"
+            android:hint="@string/nb_slam"
+            android:padding="@dimen/padding"
+            android:textColor="@color/colorGreen" />
 
         <TextView
             android:id="@+id/question_4"
             style="@style/Questions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/pad_16"
-            android:layout_marginTop="@dimen/pad_16"
-            android:padding="@dimen/pad_24"
-            android:textStyle="bold"
-            android:text="@string/quest_4" />
+            android:layout_marginBottom="@dimen/space_bottom"
+            android:layout_marginTop="@dimen/top_text"
+            android:padding="@dimen/pad_text"
+            android:text="@string/quest_4"
+            android:textStyle="bold" />
 
         <RadioGroup
             android:id="@+id/answer_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/answer_q_4_rb_1"
                 style="@style/Answers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/pad_16"
-                android:layout_marginBottom="@dimen/pad_16"
-                android:layout_marginTop="@dimen/pad_16"
-                android:layout_marginLeft="@dimen/pad_35"
-                android:layout_marginRight="@dimen/pad_35"
-                android:buttonTint="@color/colorOrange"
-                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/space_bottom"
+                android:layout_marginLeft="@dimen/space_lr"
+                android:layout_marginRight="@dimen/space_lr"
+                android:layout_marginTop="@dimen/space_top"
                 android:background="@drawable/rounded_corner_y"
-                android:text="@string/answer_1_q_4" />
+                android:buttonTint="@color/colorOrange"
+                android:padding="@dimen/padding"
+                android:text="@string/answer_1_q_4"
+                android:textStyle="bold" />
 
             <RadioButton
                 android:id="@+id/answer_q_4_rb_2"
                 style="@style/Answers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/pad_16"
-                android:layout_marginBottom="@dimen/pad_16"
-                android:layout_marginTop="@dimen/pad_16"
-                android:layout_marginLeft="@dimen/pad_35"
-                android:layout_marginRight="@dimen/pad_35"
-                android:textStyle="bold"
-                android:buttonTint="@color/colorOrange"
+                android:layout_marginBottom="@dimen/space_bottom"
+                android:layout_marginLeft="@dimen/space_lr"
+                android:layout_marginRight="@dimen/space_lr"
+                android:layout_marginTop="@dimen/space_top"
                 android:background="@drawable/rounded_corner_y"
-                android:text="@string/answer_2_q_4" />
+                android:buttonTint="@color/colorOrange"
+                android:padding="@dimen/padding"
+                android:text="@string/answer_2_q_4"
+                android:textStyle="bold" />
 
         </RadioGroup>
 
@@ -236,63 +236,63 @@
             style="@style/Questions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/pad_16"
-            android:layout_marginTop="@dimen/pad_16"
-            android:padding="@dimen/pad_24"
-            android:textStyle="bold"
-            android:text="@string/quest_5" />
+            android:layout_marginBottom="@dimen/space_bottom"
+            android:layout_marginTop="@dimen/top_text"
+            android:padding="@dimen/pad_text"
+            android:text="@string/quest_5"
+            android:textStyle="bold" />
 
         <RadioGroup
             android:id="@+id/answer_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/answer_q_5_rb_1"
                 style="@style/Answers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/pad_16"
-                android:layout_marginBottom="@dimen/pad_16"
-                android:layout_marginTop="@dimen/pad_16"
-                android:layout_marginLeft="@dimen/pad_35"
-                android:layout_marginRight="@dimen/pad_35"
-                android:buttonTint="@color/colorOrange"
-                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/space_bottom"
+                android:layout_marginLeft="@dimen/space_lr"
+                android:layout_marginRight="@dimen/space_lr"
+                android:layout_marginTop="@dimen/space_top"
                 android:background="@drawable/rounded_corner_y"
-                android:text="@string/answer_1_q_5" />
+                android:buttonTint="@color/colorOrange"
+                android:padding="@dimen/padding"
+                android:text="@string/answer_1_q_5"
+                android:textStyle="bold" />
 
             <RadioButton
                 android:id="@+id/answer_q_5_rb_2"
                 style="@style/Answers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/pad_16"
-                android:layout_marginBottom="@dimen/pad_16"
-                android:layout_marginTop="@dimen/pad_16"
-                android:layout_marginLeft="@dimen/pad_35"
-                android:layout_marginRight="@dimen/pad_35"
-                android:buttonTint="@color/colorOrange"
-                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/space_bottom"
+                android:layout_marginLeft="@dimen/space_lr"
+                android:layout_marginRight="@dimen/space_lr"
+                android:layout_marginTop="@dimen/space_top"
                 android:background="@drawable/rounded_corner_y"
-                android:text="@string/answer_2_q_5" />
+                android:buttonTint="@color/colorOrange"
+                android:padding="@dimen/padding"
+                android:text="@string/answer_2_q_5"
+                android:textStyle="bold" />
 
             <RadioButton
                 android:id="@+id/answer_q_5_rb_3"
                 style="@style/Answers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/pad_16"
-                android:layout_marginBottom="@dimen/pad_16"
-                android:layout_marginTop="@dimen/pad_16"
-                android:layout_marginLeft="@dimen/pad_35"
-                android:layout_marginRight="@dimen/pad_35"
-                android:buttonTint="@color/colorOrange"
-                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/space_bottom"
+                android:layout_marginLeft="@dimen/space_lr"
+                android:layout_marginRight="@dimen/space_lr"
+                android:layout_marginTop="@dimen/space_top"
                 android:background="@drawable/rounded_corner_y"
-                android:text="@string/answer_3_q_5" />
+                android:buttonTint="@color/colorOrange"
+                android:padding="@dimen/padding"
+                android:text="@string/answer_3_q_5"
+                android:textStyle="bold" />
 
         </RadioGroup>
 
@@ -302,15 +302,15 @@
             style="@style/Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/pad_80"
-            android:layout_marginLeft="@dimen/pad_80"
-            android:layout_marginRight="@dimen/pad_80"
-            android:layout_marginTop="@dimen/pad_24"
-            android:padding="@dimen/pad_20"
-            android:onClick="endTest"
-            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/margin_button"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:layout_marginRight="@dimen/margin_button"
+            android:layout_marginTop="@dimen/margin_top_button"
             android:background="@drawable/rounded_corner"
-            android:text="@string/end_test" />
+            android:onClick="endTest"
+            android:padding="@dimen/padding_button"
+            android:text="@string/end_test"
+            android:textStyle="bold" />
 
     </LinearLayout>
 </ScrollView>

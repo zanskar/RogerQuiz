@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="pad_16">16dp</dimen>
-    <dimen name="pad_20">20dp</dimen>
-    <dimen name="pad_24">24dp</dimen>
-    <dimen name="pad_30">30dp</dimen>
-    <dimen name="pad_35">35dp</dimen>
-    <dimen name="pad_80">80dp</dimen>
+    <dimen name="space_bottom">10dp</dimen>
+    <dimen name="space_top">10dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="top_text">20dp</dimen>
+    <dimen name="padding_button">24dp</dimen>
+    <dimen name="pad_text">20dp</dimen>
+    <dimen name="space_lr">90dp</dimen>
+    <dimen name="space_lr_field">90dp</dimen>
+    <dimen name="margin_top_button">20dp</dimen>
+    <dimen name="margin_button">90dp</dimen>
 </resources>
