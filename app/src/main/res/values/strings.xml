@@ -10,7 +10,7 @@
     <string name="answer_1_q_2"> 19 years old</string>
     <string name="answer_2_q_2"> 21 years old </string>
     <string name="quest_3">" 3 - How many grand slams did Federer win ? "</string>
-    <string name="nb_slam"> Enter number of slams </string>
+    <string name="nb_slam"> Enter nb of slams </string>
     <string name="quest_4"> 4 - During how many weeks has Federer been world N°1 in his career ? </string>
     <string name="answer_1_q_4"> 302 </string>
     <string name="answer_2_q_4"> 286 </string>
