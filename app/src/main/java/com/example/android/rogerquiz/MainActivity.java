@@ -1,5 +1,7 @@
 package com.example.android.rogerquiz;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -44,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
         // Displays the test result on the screen
         String quiz_result = createQuizResult(name, score);
         Toast.makeText(getApplicationContext(), quiz_result, Toast.LENGTH_LONG).show();
+
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.helloscore)+ name + getString(R.string.helloscore2) + score);
+        sendIntent.setType("text/plain");
+        startActivity(Intent.createChooser(sendIntent, getResources().getText(R.string.share)));
 
         //Resets the score
         score = 0;
@@ -108,14 +116,14 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * This method counts the correct answer in question 3
-     * "How many grand slams did Roger Federer win ? " (Answer is 19)
+     * "How many grand slams did Roger Federer win ? " (Answer is 20)
      */
     public void question_3() {
         // Figure out if the user chose "19" as answer
         EditText slamField = (EditText) findViewById(R.id.slam_field);
         String slam = slamField.getText().toString();
-        // Score is incremented of 1 point if us answered 19
-        if (slam.equals("19")) {
+        // Score is incremented of 1 point if us answered 20
+        if (slam.equals("20")) {
             incrementScore();
         }
     }
