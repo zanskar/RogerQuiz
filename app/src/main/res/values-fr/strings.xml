@@ -26,4 +26,5 @@
     <string name="quest_5">" 5 - Sur quelle surface Federer est-il le meilleur joueur de tous les temps ?"</string>
     <string name="share">Partager</string>
     <string name="helloscore">"Bonjour, voici le score de  "</string>
+    <string name="helloquiz">"au Quiz sur Federer : "</string>
 </resources>

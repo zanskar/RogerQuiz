@@ -25,5 +25,5 @@
     <string name="five">   on 5. </string>
     <string name="share">  Share </string>
     <string name="helloscore"> Hello, here is the score of </string>
-    <string name="helloscore2">Hello, here is the score of</string>
+    <string name="helloquiz"> for the Federer Quiz : </string>
 </resources>

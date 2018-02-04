@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
-        sendIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.helloscore)+ name + getString(R.string.helloscore2) + score);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.helloscore)+ name + getString(R.string.helloquiz) + score);
         sendIntent.setType("text/plain");
         startActivity(Intent.createChooser(sendIntent, getResources().getText(R.string.share)));
 
