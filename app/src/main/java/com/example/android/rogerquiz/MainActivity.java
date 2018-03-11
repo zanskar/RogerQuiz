@@ -1,7 +1,6 @@
 package com.example.android.rogerquiz;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -49,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
-        sendIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.helloscore)+ name + getString(R.string.helloquiz) + score);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.helloscore) + name + getString(R.string.helloquiz) + score);
         sendIntent.setType("text/plain");
         startActivity(Intent.createChooser(sendIntent, getResources().getText(R.string.share)));
 
@@ -60,12 +59,11 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Create summary of the test result.
      *
-     * @param name  of the passing the test
      * @param score of the counting of right answers
      * @return text of the test result
      */
     private String createQuizResult(String name, int score) {
-        String quiz_result = getString(R.string.hello) + " " + name + " " + getString(R.string.thanks);
+        String quiz_result = getString(R.string.hello) + " " + getString(R.string.thanks);
         quiz_result += "\n" + getString(R.string.score) + " " + score + " " + getString(R.string.five);
         return quiz_result;
     }
@@ -92,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         boolean isAustralia = AustraliaCheckBox.isChecked();
 
         // Score is incremented of 1 point if user answered both Winbledon and Us Open
-        if (isWimbledon && isUsopen) {
+        if (isWimbledon && isUsopen &&! (isAustralia || isRoland)) {
             incrementScore();
         }
     }
@@ -102,15 +100,11 @@ public class MainActivity extends AppCompatActivity {
      * "How old was Roger Federer when he won a grand slam for the first time ? " (Answer is 21 years old)
      */
     public void question_2() {
-        RadioButton answerRadio;
         RadioGroup answers = (RadioGroup) findViewById(R.id.answer_2);
         switch (answers.getCheckedRadioButtonId()) {
             case R.id.answer_q_2_rb_2:
-                answerRadio = (RadioButton) findViewById(R.id.answer_q_2_rb_2);
                 incrementScore();
                 break;
-            default:
-                answerRadio = (RadioButton) findViewById(R.id.answer_q_2_rb_1);
         }
     }
 
@@ -128,21 +122,16 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
     /**
      * This method counts the correct answer in question 4
      * "During how many weeks has Federer been world N°1 in his career ? "  (Answer is 302)
      */
     public void question_4() {
-        RadioButton answerRadio;
         RadioGroup answers = (RadioGroup) findViewById(R.id.answer_4);
         switch (answers.getCheckedRadioButtonId()) {
             case R.id.answer_q_4_rb_1:
-                answerRadio = (RadioButton) findViewById(R.id.answer_q_4_rb_1);
                 incrementScore();
                 break;
-            default:
-                answerRadio = (RadioButton) findViewById(R.id.answer_q_4_rb_2);
         }
     }
 
@@ -151,16 +140,11 @@ public class MainActivity extends AppCompatActivity {
      * "On which surface has Federer been the best tennis player ever ?"  (Answer is Grass)
      */
     public void question_5() {
-        RadioButton answerRadio;
         RadioGroup answers = (RadioGroup) findViewById(R.id.answer_5);
         switch (answers.getCheckedRadioButtonId()) {
             case R.id.answer_q_5_rb_2:
-                answerRadio = (RadioButton) findViewById(R.id.answer_q_5_rb_2);
                 incrementScore();
                 break;
-            default:
-                answerRadio = (RadioButton) findViewById(R.id.answer_q_5_rb_1);
-                answerRadio = (RadioButton) findViewById(R.id.answer_q_5_rb_3);
         }
     }
 
