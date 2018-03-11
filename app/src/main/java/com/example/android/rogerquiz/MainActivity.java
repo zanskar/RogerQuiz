@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the result button is clicked.
      */
     public void endTest(View view) {
-        EditText nameField = (EditText) findViewById(R.id.name_field);
-        String name = nameField.getText().toString();
 
         //Called question checking methods
         question_1();
@@ -43,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         setContentView(R.layout.activity_main);
         // Displays the test result on the screen
-        String quiz_result = createQuizResult(name, score);
+        String quiz_result = createQuizResult(score);
         Toast.makeText(getApplicationContext(), quiz_result, Toast.LENGTH_LONG).show();
 
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
-        sendIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.helloscore) + name + getString(R.string.helloquiz) + score);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.helloscore) + getString(R.string.helloquiz) + score);
         sendIntent.setType("text/plain");
         startActivity(Intent.createChooser(sendIntent, getResources().getText(R.string.share)));
 
