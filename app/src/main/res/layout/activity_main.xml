@@ -17,22 +17,6 @@
             android:layout_height="wrap_content"
             android:src="@drawable/roger" />
 
-        <EditText
-            android:id="@+id/name_field"
-            style="@style/Field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="@dimen/space_bottom"
-            android:layout_marginLeft="@dimen/space_lr_field"
-            android:layout_marginRight="@dimen/space_lr_field"
-            android:layout_marginTop="@dimen/top_text"
-            android:background="@drawable/rounded_corner_y"
-            android:hint="@string/user_name"
-            android:inputType="textCapWords"
-            android:padding="@dimen/space_bottom"
-            android:textColor="@color/colorGreen" />
-
         <TextView
             android:id="@+id/question_1"
             style="@style/Questions"

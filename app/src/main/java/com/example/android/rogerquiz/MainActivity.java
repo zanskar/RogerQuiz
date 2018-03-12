@@ -37,12 +37,20 @@ public class MainActivity extends AppCompatActivity {
         question_3();
         question_4();
         question_5();
+
         // Hide the keyboard
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         setContentView(R.layout.activity_main);
+
         // Displays the test result on the screen
         String quiz_result = createQuizResult(score);
         Toast.makeText(getApplicationContext(), quiz_result, Toast.LENGTH_LONG).show();
+        if (score==5) {
+            Toast.makeText(getApplicationContext(), getString(R.string.bravo), Toast.LENGTH_LONG).show();
+        }
+        else{
+            Toast.makeText(getApplicationContext(), getString(R.string.play), Toast.LENGTH_LONG).show();
+        }
 
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
@@ -60,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
      * @param score of the counting of right answers
      * @return text of the test result
      */
-    private String createQuizResult(String name, int score) {
+    private String createQuizResult(int score) {
         String quiz_result = getString(R.string.hello) + " " + getString(R.string.thanks);
         quiz_result += "\n" + getString(R.string.score) + " " + score + " " + getString(R.string.five);
         return quiz_result;
@@ -87,8 +95,8 @@ public class MainActivity extends AppCompatActivity {
         CheckBox AustraliaCheckBox = (CheckBox) findViewById(R.id.answer_q_1_cb_4);
         boolean isAustralia = AustraliaCheckBox.isChecked();
 
-        // Score is incremented of 1 point if user answered both Winbledon and Us Open
-        if (isWimbledon && isUsopen &&! (isAustralia || isRoland)) {
+        // Score is incremented of 1 point if user answered both Wimbledon and Us Open
+        if (isWimbledon && isUsopen &&! isAustralia &&! isRoland) {
             incrementScore();
         }
     }
@@ -99,10 +107,8 @@ public class MainActivity extends AppCompatActivity {
      */
     public void question_2() {
         RadioGroup answers = (RadioGroup) findViewById(R.id.answer_2);
-        switch (answers.getCheckedRadioButtonId()) {
-            case R.id.answer_q_2_rb_2:
-                incrementScore();
-                break;
+        if (answers.getCheckedRadioButtonId() == R.id.answer_q_2_rb_2) {
+            incrementScore();
         }
     }
 
@@ -111,10 +117,10 @@ public class MainActivity extends AppCompatActivity {
      * "How many grand slams did Roger Federer win ? " (Answer is 20)
      */
     public void question_3() {
-        // Figure out if the user chose "19" as answer
+        // Figure out if the user chose "20" as answer
         EditText slamField = (EditText) findViewById(R.id.slam_field);
         String slam = slamField.getText().toString();
-        // Score is incremented of 1 point if us answered 20
+        // Score is incremented of 1 point if user answered 20
         if (slam.equals("20")) {
             incrementScore();
         }
@@ -126,10 +132,8 @@ public class MainActivity extends AppCompatActivity {
      */
     public void question_4() {
         RadioGroup answers = (RadioGroup) findViewById(R.id.answer_4);
-        switch (answers.getCheckedRadioButtonId()) {
-            case R.id.answer_q_4_rb_1:
-                incrementScore();
-                break;
+        if (answers.getCheckedRadioButtonId() == R.id.answer_q_4_rb_1) {
+            incrementScore();
         }
     }
 
@@ -139,10 +143,8 @@ public class MainActivity extends AppCompatActivity {
      */
     public void question_5() {
         RadioGroup answers = (RadioGroup) findViewById(R.id.answer_5);
-        switch (answers.getCheckedRadioButtonId()) {
-            case R.id.answer_q_5_rb_2:
-                incrementScore();
-                break;
+        if (answers.getCheckedRadioButtonId() == R.id.answer_q_5_rb_2) {
+            incrementScore();
         }
     }
 

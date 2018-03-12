@@ -10,9 +10,9 @@
     <string name="answer_1_q_1">" Wimbledon "</string>
     <string name="quest_1">"1 - Quel(s) grand(s) chelem(s) ont été gagnés 5 fois de suite par Roger Federer ? "</string>
     <string name="quest_2">2 - Quel âge avait Roger Federer lorsqu\'il a gagné son premier grand chelem ?</string>
-    <string name="quest_3">3 - Combien de grans chelems Roger Federer a-t-il gagnés ?</string>
+    <string name="quest_3">3 - Combien de grands chelems Roger Federer a-t-il gagnés ?</string>
     <string name="nb_slam">Entrer le nb de gds chelems</string>
-    <string name="quest_4">"4 - Pendant combien de semaines Riger Federer a-t-il été n°1 mondial pendant sa carrière ? "</string>
+    <string name="quest_4">"4 - Pendant combien de semaines Roger Federer a-t-il été n°1 mondial pendant sa carrière ? "</string>
     <string name="answer_1_q_4">" 302 "</string>
     <string name="answer_2_q_4">" 286 "</string>
     <string name="answer_1_q_5">Dur</string>

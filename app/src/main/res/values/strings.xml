@@ -26,4 +26,7 @@
     <string name="share">  Share </string>
     <string name="helloscore"> Hello, here is the score of </string>
     <string name="helloquiz"> for the Federer Quiz : </string>
+    <string name="bravo"> Bravo ! </string>
+    <string name="play"> Play again ! </string>
+
 </resources>
