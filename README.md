@@ -6,8 +6,7 @@ This is the third project of the second phase of Google Developer Challenge Scho
 ## Technical points
 <ul>
   <li>Use of free text response, checkboxes, and radio buttons.</li>
-  <li>Use of if/else statements</li>
-  <li>Create a submit button to send the score</li> 
+  <li>Use of if/else statements</li>  <li>Create a submit button to send the score</li> 
   <li>Calculate the score, taking into account only the correct answers</li>
   <li>Create a toast message with the the score</li>
   <li>Use of Intent to share the result with friends on social media</li>
@@ -16,6 +15,4 @@ This is the third project of the second phase of Google Developer Challenge Scho
 </ul>
 
 ## Screenshots
-<img src="/images/Screenshot_1.png" width="320" height="640">
-<img src="/images/Screenshot_2.png" width="320" height="640">
-<img src="/images/Screenshot_3.png" width="320" height="640">
+<img src="/images/Screenshot_1.png" width="320" height="640" <img src="/images/Screenshot_3.png" width="320" height="640> <img src="/images/Screenshot_4.png" width="320" height="640"> <img src="/images/Screenshot_2.png" width="320" height="640">
