@@ -15,4 +15,4 @@ This is the third project of the second phase of Google Developer Challenge Scho
 </ul>
 
 ## Screenshots
-<img src="/images/Screenshot_1.png" width="320" height="640"> <img src="/images/Screenshot_3.png" width="320" height="640"> <img src="/images/Screenshot_5.png" width="320" height="640"><img src="/images/Screenshot_4.png" width="320" height="640"> <img src="/images/Screenshot_2.png" width="320" height="640">
+<img src="/images/Screenshot_1.png" width="320" height="640"> <img src="/images/Screenshot_3.png" width="320" height="640"> <img src="/images/Screenshot_6.png" width="320" height="640"><img src="/images/Screenshot_4.png" width="320" height="640"> <img src="/images/Screenshot_2.png" width="320" height="640">
