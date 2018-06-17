@@ -11,7 +11,9 @@ This is the third project of the second phase of Google Developer Challenge Scho
   <li>Create a toast message with the the score</li>
   <li>Use of Intent to share the result with friends on social media</li>
   <li>Multilanguage app : english and french, app sets up on the corresponding language depending on the language chosen on the phone where the app is used</li>
-  <li>The app continues to display the content when rotated</li> 
+  <li>The app continues to display the content when rotated</li>
+  <li>Implemented a launch icon</li>
+  <li>Design of the app on Sketch then coding the styling of the app</li> 
 </ul>
 
 ## Screenshots
