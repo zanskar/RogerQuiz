@@ -10,7 +10,7 @@ This is the third project of the second phase of Google Developer Challenge Scho
   <li>Create a submit button to send the score</li> 
   <li>Calculate the score, taking into account only the correct answers</li>
   <li>Create a toast message with the the score</li>
-  <li>Use of Intent to share the result with friends on social media</li
+  <li>Use of Intent to share the result with friends on social media</li>
   <li>Multilanguage app : english and french, app sets up on the corresponding language depending on the language chosen on the phone where the app is used</li>
   <li>The app continues to display the content when rotated</li> 
 </ul>
